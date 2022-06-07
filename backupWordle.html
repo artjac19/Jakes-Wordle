@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {text-align: center;}
+            button { 
+                --webkit-appearance: none;
+                --moz-appearance: none;
+                appearance: none;
+            }
+            p {text-align: center;}
+            div {align-content: center;}
+            input {text-align: center;}
+            canvas {align-content: center;}
+            .centr { margin: auto; }
+            .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+        <p><b></b></p>
+        
+        <div id="reset"class="center" style="position:relative;width:100px;height:40px">
+            <button type="button" onclick="resetBoard()" id="btn">Play Again</button>
+        </div>
+        <canvas width=2000 height=50 id="canvas0"></canvas>
+        <canvas height=600 id="canvas"></canvas>
+        <div name="buttons" id="buttons"></div>
+        <div name="buttons2" id="buttons2"></div>
+        <div name="buttons3" id="buttons3"></div>
+        <canvas height=300 id="canvas2"></canvas>
+        <script src="main.js"></script>
+    </body>
+</html>
